@@ -1,15 +1,15 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Dashboard from './page/Dashboard/Dashboard'
 
 function App() {
 
   return (
     <>
-     <Routes> 
-            <Route path={'/'} element={<Navbar/>}>
-              <Route index element={<HomePage/>}/>  
-            </Route>
-        </Routes>
+      <Routes> 
+            <Route path={'/'} element={<Dashboard/> }/>
+      </Routes>
     </>
   )
 }
